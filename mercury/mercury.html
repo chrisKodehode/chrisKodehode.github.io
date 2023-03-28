@@ -1,55 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mercury</title>
+    <title>Mercury</title>
     <link rel="stylesheet" href="mercury.css" />
+    <link rel="icon" href="/mercury/Pictures/MercuryPlanet.png" />
   </head>
   <body>
     <header>
-      <div class="nav-bar">
-        <div class="logo"><a href="#">Web dev Creative</a></div>
-
-        <ul class="links">
-          <li><a href="#about"> Home</a></li>
-          <li><a href="#home">About</a></li>
-          <li><a href="#service"> Service</a></li>
-          <li><a href="project"> project</a></li>
-          <li><a href="test"> Test automation</a></li>
-          <li><a href="contact"> Contact</a></li>
-          <li><a href="contact1"> serche</a></li>
-        </ul>
-        <a herf="#" class="action_btn">Get Started</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-      <div class="dropdwon-menu">
-        <li><a href="#about"> Home</a></li>
-        <li><a href="#home">About</a></li>
-        <li><a href="#service"> Service</a></li>
-        <li><a href="project"> project</a></li>
-        <li><a href="test"> Test automation</a></li>
-        <li><a href="contact"> Contact</a></li>
-        <li><a href="contact1"> serche</a></li>
-        <li><a herf="#" class="action_btn">Get Started</a></li>
-      </div>
+      <nav>
+        <!--Anchor class for cleaner code-->
+        <a class="logo" href="#">Mercury</a>
+          <ul class="nav-links">
+            <li><a href="#get-started">Get Started</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+      </nav>
     </header>
-
-    <script>
-      const toggleBtn = document.querySelector(`.toggle_btn`);
-      const toggleBtnIcon = document.querySelector(`.toggle_btn i`);
-      const dropDownMenu = document.querySelector(`.dropdwon-menu`);
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle(`open`);
-        const isOpen = dropDownMenu.classList.contains(`open`);
-
-        toggleBtnIcon.classList = isOpen
-          ? `fa-solid fa-xmark`
-          : `fa-solid fa-bars`;
-      };
-    </script>
   </body>
 </html>
