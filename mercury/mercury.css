@@ -160,5 +160,21 @@ nav{
 
 #video{
   margin: 100px;
-  margin-left: 800px;
+  margin-left: 723px;
 }
+
+.explore-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-title{
+  color: #FBB00E;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  margin: 300px auto 0px auto;
+}
+
