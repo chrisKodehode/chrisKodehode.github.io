@@ -3,6 +3,10 @@
     1: Optimize code with shorthands, CSS Best practices, rules etc
 */
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -57,7 +61,7 @@ nav{
   color: #FBB00E;
 }
 
-.intro-section{
+#intro-section{
   display: flex;
 
   width: 100%;
@@ -128,14 +132,14 @@ nav{
   margin: 0;
 }
 
-.get-started{
+#get-started{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+#title{
   color: #FBB00E;
 
   font-size: xx-large;
@@ -170,11 +174,16 @@ nav{
   align-items: center;
 }
 
-.explore-title{
+#explore-title{
   color: #FBB00E;
   font-size: x-large;
   font-weight: bold;
   text-align: center;
   margin: 300px auto 0px auto;
+}
+
+a{
+  color: #FBB00E;
+  text-decoration: none;
 }
 
