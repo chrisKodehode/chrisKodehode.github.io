@@ -3,72 +3,74 @@
     1: Optimize code with shorthands, CSS Best practices, rules etc
 */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #252525;
   min-height: 100vh;
   min-width: 100rem;
 }
 
-nav{
+nav {
   position: 0;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 100px;
   background-color: #2e2e2e;
   z-index: 1000; /* Make navbar on top of all elements */
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100px;
 }
 
-.nav-items{
-  color: #FBB00E;
+.nav-items {
+  color: #fbb00e;
   list-style: none;
 
   font-size: x-large;
   font-weight: bold;
 
-      
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
 }
 
-.get--started, .explore, .facts, .contact-info{
+.get--started,
+.explore,
+.facts,
+.contact-info {
   padding-right: 80px;
 
   /*make nav items look clickable*/
   cursor: pointer;
 }
 
-.intro-title{
-  color: #FBB00E;
+.intro-title {
+  color: #fbb00e;
 }
 
-#intro-section{
+#intro-section {
   display: flex;
 
   width: 100%;
   height: 100%;
 }
 
-.left-flex{
+.left-flex {
   background-color: black;
   width: 50%;
   height: 600px;
@@ -76,18 +78,18 @@ nav{
   padding: 150px 0px 0px 150px;
 }
 
-.intro-text{
+.intro-text {
   color: white;
   font-size: larger;
 
   display: flex;
-  align-items:start;
+  align-items: start;
   padding: 10px 100px 0px 0px;
 
   white-space: pre-line;
 }
 
-.right-flex{
+.right-flex {
   background-color: black;
   width: 50%;
   height: 600px;
@@ -112,7 +114,7 @@ nav{
 }
 
 .planet-title {
-  color: #FBB00E;
+  color: #fbb00e;
   text-transform: uppercase;
   font-size: medium;
   margin-bottom: 10px;
@@ -126,21 +128,21 @@ nav{
   margin: 0;
 }
 
-.planet-type{
+.planet-type {
   color: white;
   font-size: medium;
   margin: 0;
 }
 
-#get-started{
+#get-started {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#title{
-  color: #FBB00E;
+#title {
+  color: #fbb00e;
 
   font-size: xx-large;
   font-weight: bold;
@@ -149,41 +151,236 @@ nav{
   margin: 300px auto 0px auto;
 }
 
-#watch-this{
+#watch-this {
   position: absolute;
   margin-left: 380px;
   margin-top: 230px;
 }
 
-#character{
+#character {
   width: 500px;
   height: 500px;
   /* margin: 100px 0 -750px 150px; */
   margin: 100px 0 -750px 150px;
 }
 
-#video{
+#video {
   margin: 100px;
   margin-left: 723px;
 }
+.explore {
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
 
-.explore-wrapper{
+.explore-wrapper {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#explore-title{
-  color: #FBB00E;
+.murcury1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#explore-title {
+  color: #fbb00e;
   font-size: x-large;
   font-weight: bold;
   text-align: center;
-  margin: 300px auto 0px auto;
+  margin: 0px auto 0px auto;
+  padding-bottom: 50px;
 }
 
-a{
-  color: #FBB00E;
+a {
+  color: #fbb00e;
   text-decoration: none;
 }
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0px;
+  perspective: 1000px;
+  perspective-origin: 60% 50%;
+  transform: rotate(-10deg);
+}
 
+.wrapper > div {
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  height: 0;
+}
+.sun {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 125px !important;
+}
+.sun .star {
+  width: 250px;
+  height: 250px;
+  background: url(./Pictures/sunnn.png) no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  margin: 0 auto;
+  animation: spinsun 40s infinite linear;
+}
+.sun .star:hover {
+  width: 500px;
+  height: 500px;
+}
+.planet {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent url(./Pictures/Space.jpg) 0% 0% no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.murcury {
+  position: absolute;
+  width: 400px;
+  z-index: 2;
+  animation: orbitmurcury 12s infinite linear;
+  top: -7.5px;
+}
+.murcury .planet:hover {
+  width: 120px;
+  height: 120px;
+}
+.murcury .planet {
+  width: 25px;
+  height: 25px;
+  background-image: url(./Pictures/MercuryPlanet.png);
+  animation: anti-spin 12s infinite linear;
+}
+.murcury .shadow {
+  animation: shadow 12s infinite linear;
+}
+@keyframes spinsun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes shadow {
+  0% {
+    background-position: 130% 0%;
+  }
+  33% {
+    background-position: 50% 0%;
+  }
+  55% {
+    background-position: 0 0%;
+  }
+  80% {
+    background-position: -50% 0%;
+  }
+  100% {
+    background-position: -50% 0%;
+  }
+}
+@keyframes orbitmurcury {
+  0% {
+    z-index: 2;
+    transform: rotateY(0);
+  }
+  49% {
+    z-index: 2;
+  }
+  50% {
+    z-index: -2;
+  }
+  99% {
+    z-index: -2;
+  }
+  100% {
+    z-index: 2;
+    transform: rotateY(360deg);
+  }
+}
+@keyframes anti-spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes anti-spin-rings {
+  from {
+    transform: rotateY(0) rotateX(73deg);
+  }
+  to {
+    transform: rotateY(-360deg) rotateX(73deg);
+  }
+}
+.wrapper1 {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0px;
+  perspective: 1000px;
+  perspective-origin: 60% 50%;
+  transform: rotate(-10deg);
+}
+
+.wrapper1 > div {
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  height: 0;
+}
+.mercury2 {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 125px !important;
+}
+.mercury2 .star1 {
+  width: 250px;
+  height: 250px;
+  background: url(./Pictures/mercury02.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  margin: 0 auto;
+  animation: spinsun1 40s infinite linear;
+}
+.mercury2 .star1:hover {
+  width: 500px;
+  height: 500px;
+}
+@keyframes spinsun1 {
+  0% {
+    transform: rotateZ(0);
+    /*transform: rotate(0);*/
+  }
+  100% {
+    transform: rotateZ(360deg);
+    /* transform: rotate(360deg);*/
+  }
+}

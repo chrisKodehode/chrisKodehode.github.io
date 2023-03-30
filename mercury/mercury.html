@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercury</title>
-    <link rel="stylesheet" href="mercury.css">
-    <link rel="icon" href="Pictures/MercuryPlanet.png">
-</head>
-    <body>
-        <!--Navigation bar section-->
-        <nav class="nav-container">
-            <ul class="nav-items">
-                <li class="get--started"><a href="#title">Get Started</a></li>
-                <li class="explore"><a href="#explore-title">Explore</a></li>
-                <li class="facts">Facts</li>
-                <li class="contact-info">Contact Info</li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="mercury.css" />
+    <link rel="icon" href="Pictures/MercuryPlanet.png" />
+  </head>
+  <body>
+    <!--Navigation bar section-->
+    <nav class="nav-container">
+      <ul class="nav-items">
+        <li class="get--started"><a href="#title">Get Started</a></li>
+        <li class="explore"><a href="#explore-title">Explore</a></li>
+        <li class="facts">Facts</li>
+        <li class="contact-info">Contact Info</li>
+      </ul>
+    </nav>
 
-        <!--Intro section-->
-        <section id="intro-section">
-            <div class="left-flex">
-                <h1 class="intro-title">Mercury</h1>
-                    <p class="intro-text">
-                        Mercury is the smallest planet in the Solar
-                        System and the closest to the Sun. Its orbit 
-                        around the Sun takes 87.97 Earth days, 
-                        the shortest of all the Sun's planets.
-                        
-                        It is named after the Roman god Mercurius
-                        (Mercury), god of commerce, messenger of the gods,
-                        and mediator between gods and mortals, corresponding
-                        to the Greek god Hermes.
-                    </p>
+    <!--Intro section-->
+    <section id="intro-section">
+      <div class="left-flex">
+        <h1 class="intro-title">Mercury</h1>
+        <p class="intro-text">
+          Mercury is the smallest planet in the Solar System and the closest to
+          the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest
+          of all the Sun's planets. It is named after the Roman god Mercurius
+          (Mercury), god of commerce, messenger of the gods, and mediator
+          between gods and mortals, corresponding to the Greek god Hermes.
+        </p>
+      </div>
+
+      <div class="right-flex">
+        <img
+          src="Pictures/mercury-transparent.png"
+          alt="Picture of the planet Mercury in space"
+          id="mercury-planet"
+        />
+      </div>
+    </section>
+
+    <section id="intro-bottom">
+      <div class="planet-details">
+        <!-- Details about Mercury -->
+        <div class="detail-item">
+          <h1 class="planet-title">distance from sun</h1>
+          <h2 class="planet-distance">28,939,856 km</h2>
+        </div>
+
+        <div class="detail-item">
+          <h1 class="planet-title">one way light time to the sun</h1>
+          <h2 class="planet-orbit-time">2.589076 mins</h2>
+        </div>
+
+        <div class="detail-item">
+          <h1 class="planet-title">length of year</h1>
+          <h2 class="planet-orbit-duration">88 Earth Days</h2>
+        </div>
+
+        <div class="detail-item">
+          <h1 class="planet-title">planet type</h1>
+          <h2 class="planet-type">TERRESTIAL</h2>
+        </div>
+      </div>
+    </section>
+
+    <!--Get Started Section-->
+    <section id="get-started">
+      <div class="get-started-wrapper">
+        <div class="get-started-title">
+          <h1 id="title">Get Started</h1>
+        </div>
+
+        <div>
+          <!--Watch this Text Picture-->
+          <img
+            src="Pictures/watch-this.png"
+            alt="Picture of a text saying Watch this and has some round circles in it."
+            id="watch-this"
+          />
+        </div>
+
+        <!--Pointing Character-->
+        <img
+          src="Pictures/character.webp"
+          alt="Picture of an animated character pointing with his finger"
+          id="character"
+        />
+
+        <!--Youtube video about Mercury-->
+        <div id="video">
+          <iframe
+            width="1080"
+            height="608"
+            src="https://www.youtube.com/embed/D6XzuOne_4Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--Explore Section-->
+    <div id="explore-title">
+      <h1>Explore Mercury</h1>
+    </div>
+    <section class="explore">
+      <div class="explore-wrapper">
+        <div class="wrapper">
+          <div class="sun">
+            <div class="star"></div>
+          </div>
+          <div class="murcury">
+            <div class="planet">
+              <div class="shadow"></div>
             </div>
-
-            <div class="right-flex">
-                <img src="Pictures/mercury-transparent.png"
-                alt="Picture of the planet Mercury in space" id="mercury-planet">
-            </div>
-        </section>
-
-        <section id="intro-bottom">
-            <div class="planet-details">
-                <!-- Details about Mercury -->
-                <div class="detail-item">
-                    <h1 class="planet-title">distance from sun</h1>
-                    <h2 class="planet-distance">28,939,856 km</h2>
-                </div>
-
-                <div class="detail-item">
-                    <h1 class="planet-title">one way light time to the sun</h1>
-                    <h2 class="planet-orbit-time">2.589076 mins</h2>
-                </div>
-
-                <div class="detail-item">
-                    <h1 class="planet-title">length of year</h1>
-                    <h2 class="planet-orbit-duration">88 Earth Days</h2>
-                </div>
-
-                <div class="detail-item">
-                    <h1 class="planet-title">planet type</h1>
-                    <h2 class="planet-type">TERRESTIAL</h2>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Get Started Section-->
-        <section id="get-started">
-            <div class="get-started-wrapper">
-                <div class="get-started-title">
-                    <h1 id="title">Get Started</h1>
-                </div>
-
-                <div>
-                    <!--Watch this Text Picture-->
-                    <img src="Pictures/watch-this.png" alt="Picture of a text saying Watch this and has some round circles in it." id="watch-this">
-                </div>
-                
-                <!--Pointing Character-->
-                <img src="Pictures/character.webp" alt="Picture of an animated character pointing with his finger" id="character">
-                
-                <!--Youtube video about Mercury-->
-                <div id="video">
-                    <iframe width="1080" height="608" src="https://www.youtube.com/embed/D6XzuOne_4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <!--Explore Section-->
-            <section class="explore">
-                <div class="explore-wrapper">
-                    <div id="explore-title">
-                        <h1>Explore Mercury</h1>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-    </body>
+          </div>
+        </div>
+      </div>
+      <div class="murcury1">
+        <div class="wrapper1">
+          <div class="mercury2">
+            <div class="star1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
