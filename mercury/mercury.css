@@ -182,7 +182,7 @@ nav {
   align-items: center;
 }
 
-.murcury1 {
+.mercury1 {
   width: 50%;
   height: 100%;
   display: flex;
@@ -238,8 +238,8 @@ a {
   animation: spinsun 40s infinite linear;
 }
 .sun .star:hover {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 }
 .planet {
   background-size: cover;
@@ -258,24 +258,24 @@ a {
   background-size: cover;
   border-radius: 100%;
 }
-.murcury {
+.mercury {
   position: absolute;
   width: 400px;
   z-index: 2;
   animation: orbitmurcury 12s infinite linear;
   top: -7.5px;
 }
-.murcury .planet:hover {
+.mercury .planet:hover {
   width: 120px;
   height: 120px;
 }
-.murcury .planet {
+.mercury .planet {
   width: 25px;
   height: 25px;
   background-image: url(./Pictures/MercuryPlanet.png);
   animation: anti-spin 12s infinite linear;
 }
-.murcury .shadow {
+.mercury .shadow {
   animation: shadow 12s infinite linear;
 }
 @keyframes spinsun {
@@ -365,15 +365,15 @@ a {
 .mercury2 .star1 {
   width: 250px;
   height: 250px;
-  background: url(./Pictures/mercury02.jpg) no-repeat;
+  background: url(./Pictures/Mercury\ Planet.png) no-repeat;
   background-size: cover;
   border-radius: 250px;
   margin: 0 auto;
   animation: spinsun1 40s infinite linear;
 }
 .mercury2 .star1:hover {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 }
 /*Mercury zoom Animation*/
 @keyframes spinsun1 {
@@ -385,4 +385,61 @@ a {
     transform: rotateZ(360deg);
     /* transform: rotate(360deg);*/
   }
+}
+.mercuryGallery {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mercury-photo {
+  position: absolute;
+  width: 450px;
+  height: 350;
+
+  border-radius: 3%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  outline-offset: 5px;
+  transition: all 0.3s;
+  animation: mercury infinite linear;
+}
+@keyframes mercury {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mercury-photo1 {
+  top: 0;
+  left: 3%;
+}
+.mercury-photo2 {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.mercury-photo3 {
+  top: 20px;
+  left: 20%;
+}
+.mercury-photo4 {
+  top: 40px;
+  left: 40%;
+}
+.mercury-photo5 {
+  top: 20px;
+  right: 20%;
+  z-index: 2;
+}
+.mercury-photo:hover {
+  outline: 3px solid white;
+  width: 500px;
+  height: 400px;
 }
