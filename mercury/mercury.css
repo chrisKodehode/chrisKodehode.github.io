@@ -419,7 +419,7 @@ a {
   display: flex;
 }
 
-.facts-title{
+#facts-title{
   color: #fbb00e;
   /* font-size: xx-large; */
   font-size: 48px;
@@ -431,7 +431,7 @@ a {
 
 .gallery-title{
   color: #fbb00e;
-  padding: 300px 0px 20px 0px;
+  padding: 800px 0px 20px 0px;
 }
 
 .gallery-text{
