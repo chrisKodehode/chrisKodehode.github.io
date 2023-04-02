@@ -431,7 +431,7 @@ a {
 
 .facts-wrapper{
   display: flex;
-  flex-direction: wrap;
+  /* flex-direction: wrap; */
   margin: auto;
   padding-left: 20px;
 }
@@ -443,6 +443,7 @@ a {
   color: white;
   border: 6px solid #fbb00e;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 .fact-1-number{
@@ -458,6 +459,33 @@ a {
 }
 
 .fact-1-text{
+  padding: 20px 0 0 20px;
+  font-size: large;
+}
+
+.fact-2{
+  background-color: black;
+  width: 250px;
+  height: 250px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.fact-2-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-2-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-2-text{
   padding: 20px 0 0 20px;
   font-size: large;
 }
