@@ -438,8 +438,28 @@ a {
 
 .fact-1{
   background-color: black;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+}
+
+.fact-1-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-1-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-1-text{
+  padding: 20px 0 0 20px;
+  font-size: large;
 }
 
 .gallery-title{
