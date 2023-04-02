@@ -416,7 +416,7 @@ a {
 }
 
 .facts-section{
-  display: flex;
+
 }
 
 #facts-title{
@@ -427,6 +427,19 @@ a {
   text-align: center;
   margin: 300px auto 0px auto;
   padding-bottom: 50px;
+}
+
+.facts-wrapper{
+  display: flex;
+  flex-direction: wrap;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.fact-1{
+  background-color: black;
+  width: 100px;
+  height: 100px;
 }
 
 .gallery-title{
