@@ -404,9 +404,20 @@ a {
   }
 }
 
+.explore-title{
+  color: #fbb00e;
+  padding: 0px 20px 20px 20px;
+}
+
+.explore-text{
+  color: white;
+  padding: 100px 0px 0px 0px;
+  font-size: x-large;
+}
+
 .gallery-title{
   color: #fbb00e;
-  padding: 0px 0px 20px 0px;
+  padding: 300px 0px 20px 0px;
 }
 
 .gallery-text{
