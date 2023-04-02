@@ -600,9 +600,117 @@ a {
   font-size: large;
 }
 
+.fact-7{
+  background-color: black;
+  width: 250px;
+  height: 400px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.fact-7-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-7-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-7-text{
+  padding: 20px;
+  font-size: large;
+}
+
+.fact-8{
+  background-color: black;
+  width: 250px;
+  height: 400px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.fact-8-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-8-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-8-text{
+  padding: 20px;
+  font-size: large;
+}
+
+.fact-9{
+  background-color: black;
+  width: 250px;
+  height: 400px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.fact-9-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-9-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-9-text{
+  padding: 20px;
+  font-size: large;
+}
+
+.fact-10{
+  background-color: black;
+  width: 250px;
+  height: 400px;
+  color: white;
+  border: 6px solid #fbb00e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.fact-10-number{
+  color: #fbb00e;
+  text-align: center;
+}
+
+.fact-10-title{
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+  border: 2px solid #fbb00e;
+}
+
+.fact-10-text{
+  padding: 20px;
+  font-size: large;
+}
+
 .gallery-title{
   color: #fbb00e;
-  padding: 800px 0px 20px 0px;
+  padding: 600px 0px 20px 0px;
 }
 
 .gallery-text{
