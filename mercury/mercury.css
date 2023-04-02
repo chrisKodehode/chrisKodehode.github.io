@@ -139,7 +139,7 @@ nav {
 #title {
   color: #fbb00e;
 
-  font-size: xx-large;
+  font-size: 48px;
   font-weight: bold;
 
   text-align: center;
@@ -413,6 +413,20 @@ a {
   color: white;
   padding: 100px 0px 0px 0px;
   font-size: x-large;
+}
+
+.facts-section{
+  display: flex;
+}
+
+.facts-title{
+  color: #fbb00e;
+  /* font-size: xx-large; */
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 300px auto 0px auto;
+  padding-bottom: 50px;
 }
 
 .gallery-title{
