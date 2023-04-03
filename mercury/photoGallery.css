@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .mercuryGallery {
   width: 100%;
   height: 350px;
@@ -14,6 +15,8 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+
+
 @keyframes mercury {
   0% {
     transform: translateX(0);
@@ -45,40 +48,52 @@ body {
   right: 0;
   z-index: 1;
 }
+
 .mercury-photo3 {
   top: 20px;
   left: 20%;
 }
+
 .mercury-photo4 {
   top: 40px;
   left: 40%;
 }
+
 .mercury-photo5 {
   top: 20px;
   right: 10%;
   z-index: 2;
 }
+
 .mercury-photo:hover {
   outline: 3px solid white;
   width: 500px;
   height: 400px;
   transform: scale(1.05) translateY(-20px);
+  /*Increase stacking order of images*/
+  z-index: 10; 
 }
+
 .photoMer1 {
   left: 3%;
 }
+
 .photoMer2 {
   right: 0;
 }
+
 .photoMer3 {
   left: 20%;
 }
+
 .photoMer4 {
   left: 40%;
 }
+
 .photoMer5 {
   right: 10%;
 }
+
 .photoMer1,
 .photoMer2,
 .photoMer3,
@@ -104,10 +119,12 @@ body {
 
   text-align: center;
 }
+
 .mercury-photo:hover ~ .photoMer1,
 .mercury-photo:hover ~ .photoMer2,
 .mercury-photo:hover ~ .photoMer3,
 .mercury-photo:hover ~ .photoMer4,
 .mercury-photo:hover ~ .photoMer5 {
   opacity: 1;
+
 }
