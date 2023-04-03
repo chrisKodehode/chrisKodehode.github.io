@@ -370,250 +370,19 @@ a {
   margin: 20px auto 20px auto;
   justify-content: center;
 }
-
 .fact-1 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
   margin: 0 20px 20px 0;
 }
 
-.fact-1-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-1-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-1-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-2 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-2-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-2-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-2-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-3 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-3-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-3-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-3-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-4 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-4-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-4-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-4-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-5 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-5-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-5-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-5-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-6 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-6-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-6-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-6-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-7 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-7-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-7-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-7-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-8 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-8-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-8-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-8-text {
-  padding: 20px;
-  font-size: large;
-}
-
-.fact-9 {
-  background-color: black;
-  width: 250px;
-  height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.fact-9-number {
-  color: #fbb00e;
-  text-align: center;
-}
-
-.fact-9-title {
-  text-align: center;
-  font-size: large;
-  font-weight: 800;
-  border: 2px solid #fbb00e;
-}
-
-.fact-9-text {
-  padding: 20px;
-  font-size: large;
-}
-
+.fact-1,
+.fact-2,
+.fact-3,
+.fact-4,
+.fact-5,
+.fact-6,
+.fact-7,
+.fact-8,
+.fact-9,
 .fact-10 {
   background-color: black;
   width: 250px;
@@ -621,14 +390,31 @@ a {
   color: white;
   border: 6px solid #fbb00e;
   border-radius: 10px;
-  margin-right: 20px;
 }
 
+.fact-1-number,
+.fact-2-number,
+.fact-3-number,
+.fact-4-number,
+.fact-5-number,
+.fact-6-number,
+.fact-7-number,
+.fact-8-number,
+.fact-9-number,
 .fact-10-number {
   color: #fbb00e;
   text-align: center;
 }
 
+.fact-1-title,
+.fact-2-title,
+.fact-3-title,
+.fact-4-title,
+.fact-5-title,
+.fact-6-title,
+.fact-7-title,
+.fact-8-title,
+.fact-9-title,
 .fact-10-title {
   text-align: center;
   font-size: large;
@@ -636,11 +422,31 @@ a {
   border: 2px solid #fbb00e;
 }
 
+.fact-1-text,
+.fact-2-text,
+.fact-3-text,
+.fact-4-text,
+.fact-5-text,
+.fact-6-text,
+.fact-7-text,
+.fact-8-text,
+.fact-9-text,
 .fact-10-text {
   padding: 20px;
   font-size: large;
 }
 
+.fact-2,
+.fact-3,
+.fact-4,
+.fact-5,
+.fact-6,
+.fact-7,
+.fact-8,
+.fact-9,
+.fact-10 {
+  margin-right: 20px;
+}
 .gallery-title {
   color: #fbb00e;
   padding: 600px 0px 20px 0px;
