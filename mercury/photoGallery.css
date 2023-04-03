@@ -6,22 +6,15 @@ body {
 
 .mercuryGallery {
   width: 100%;
-  height: 350px;
-
-  position: relative;
+  height: 400px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+
   align-items: center;
   margin: 0 auto;
-}
-@keyframes mercury {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 .mercury-photo {
@@ -31,19 +24,27 @@ body {
   display: block;
   border-radius: 3%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  z-index: 5;
   outline-offset: 5px;
   transition: all 0.3s;
-  animation: mercury infinite linear;
+}
+@keyframes mercury {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .mercury-photo1 {
   top: 0;
   left: 3%;
+  animation: mercury 10s infinite linear;
 }
 .mercury-photo2 {
   top: 0;
-  right: 0;
+  right: 3%;
   z-index: 1;
 }
 
@@ -67,15 +68,15 @@ body {
   outline: 3px solid white;
   width: 500px;
   height: 400px;
+  z-index: 10;
   transform: scale(1.05) translateY(-20px);
 }
 
 .photoMer1 {
   left: 3%;
 }
-
 .photoMer2 {
-  right: 0;
+  right: 3%;
 }
 
 .photoMer3 {
@@ -83,7 +84,7 @@ body {
 }
 
 .photoMer4 {
-  left: 30%;
+  left: 40%;
 }
 
 .photoMer5 {
@@ -95,23 +96,22 @@ body {
 .photoMer3,
 .photoMer4,
 .photoMer5 {
-  content: attr(title);
   position: absolute;
   bottom: 0;
+  z-index: 10;
   background: rgb(248, 246, 246);
 
   /*background: rgba(0, 0, 0, 0.4); /* Black see through*/
   color: white;
   width: 480px;
-  height: 20px;
+  height: 30px;
   transition: 0.5s ease;
   opacity: 0;
   color: aqua;
   font-size: 16px;
   padding: 5px;
-  cursor: pointer;
 
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s;
 
   text-align: center;
 }
@@ -123,11 +123,3 @@ body {
 .mercury-photo:hover ~ .photoMer5 {
   opacity: 1;
 }
-/*
-.mercuryGallery span {
-  position: absolute;
-  width: 450px;
-  height: 350px;
-  transform-origin: center;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
-}*
