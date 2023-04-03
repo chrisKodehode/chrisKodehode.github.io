@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(175, 143, 143);
+  justify-content: center;
+  align-items: center;
+}
+.mercuryGallery {
+  width: 100%;
+  height: 350px;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+@keyframes mercury {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.mercury-photo {
+  position: absolute;
+  width: 450px;
+  height: 350px;
+  display: block;
+  border-radius: 3%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  outline-offset: 5px;
+  transition: all 0.3s;
+  animation: mercury infinite linear;
+}
+
+.mercury-photo1 {
+  top: 0;
+  left: 3%;
+}
+.mercury-photo2 {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.mercury-photo3 {
+  top: 20px;
+  left: 20%;
+}
+.mercury-photo4 {
+  top: 40px;
+  left: 40%;
+}
+.mercury-photo5 {
+  top: 20px;
+  right: 10%;
+  z-index: 2;
+}
+.mercury-photo:hover {
+  outline: 3px solid white;
+  width: 500px;
+  height: 400px;
+  transform: scale(1.05) translateY(-20px);
+}
+.photoMer1 {
+  left: 3%;
+}
+.photoMer2 {
+  right: 0;
+}
+.photoMer3 {
+  left: 20%;
+}
+.photoMer4 {
+  left: 40%;
+}
+.photoMer5 {
+  right: 10%;
+}
+.photoMer1,
+.photoMer2,
+.photoMer3,
+.photoMer4,
+.photoMer5 {
+  content: attr(title);
+  position: absolute;
+  bottom: 0;
+  background: rgb(248, 246, 246);
+
+  /*background: rgba(0, 0, 0, 0.4); /* Black see through*/
+  color: white;
+  width: 480px;
+  height: 20px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: aqua;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+
+  transition: opacity 0.5s ease-out;
+
+  text-align: center;
+}
+.mercury-photo:hover ~ .photoMer1,
+.mercury-photo:hover ~ .photoMer2,
+.mercury-photo:hover ~ .photoMer3,
+.mercury-photo:hover ~ .photoMer4,
+.mercury-photo:hover ~ .photoMer5 {
+  opacity: 1;
+}
