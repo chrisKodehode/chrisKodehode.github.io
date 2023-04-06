@@ -3,20 +3,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .mercuryGallery {
   width: 100%;
-  height: 400px;
+  height: 450px;
   display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   position: relative;
-
   align-items: center;
   margin: 0 auto;
 }
-
 .mercury-photo {
   position: absolute;
   width: 450px;
@@ -28,15 +22,6 @@ body {
   outline-offset: 5px;
   transition: all 0.3s;
 }
-@keyframes mercury {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .mercury-photo1 {
   top: 0;
   left: 3%;
@@ -47,21 +32,63 @@ body {
   right: 3%;
   z-index: 1;
 }
-
+@keyframes mercury {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-120%);
+  }
+}
+@keyframes mercury1 {
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-150%);
+  }
+}
+@keyframes mercury2 {
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-250%);
+  }
+}
+@keyframes mercury3 {
+  60% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+}
+@keyframes mercury4 {
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
 .mercury-photo3 {
   top: 20px;
   left: 20%;
+  animation: mercury1 15s infinite linear;
 }
 
 .mercury-photo4 {
   top: 40px;
   left: 40%;
+  animation: mercury3 20s infinite linear;
 }
 
 .mercury-photo5 {
   top: 20px;
   right: 10%;
   z-index: 2;
+  animation: mercury4 25s infinite linear;
 }
 
 .mercury-photo:hover {
@@ -72,54 +99,50 @@ body {
   transform: scale(1.05) translateY(-20px);
 }
 
-.photoMer1 {
+.hover-text1 {
   left: 3%;
 }
-.photoMer2 {
+.hover-text2 {
   right: 3%;
 }
-
-.photoMer3 {
+.hover-text3 {
   left: 20%;
 }
 
-.photoMer4 {
+.hover-text4 {
   left: 40%;
 }
-
-.photoMer5 {
+.hover-text5 {
   right: 10%;
 }
 
-.photoMer1,
-.photoMer2,
-.photoMer3,
-.photoMer4,
-.photoMer5 {
+.hover-text1,
+.hover-text2,
+.hover-text3,
+.hover-text4,
+.hover-text5 {
   position: absolute;
   bottom: 0;
   z-index: 10;
-  background: rgb(248, 246, 246);
-
-  /*background: rgba(0, 0, 0, 0.4); /* Black see through*/
+  background: solid rgba(0, 0, 0, alpha 0.4);
   color: white;
   width: 480px;
   height: 30px;
   transition: 0.5s ease;
   opacity: 0;
-  color: aqua;
+  color: white;
   font-size: 16px;
-  padding: 5px;
+  padding: 10px;
 
   transition: opacity 0.5s;
 
   text-align: center;
 }
 
-.mercury-photo:hover ~ .photoMer1,
-.mercury-photo:hover ~ .photoMer2,
-.mercury-photo:hover ~ .photoMer3,
-.mercury-photo:hover ~ .photoMer4,
-.mercury-photo:hover ~ .photoMer5 {
+.mercury-photo:hover ~ .hover-text1,
+.mercury-photo:hover ~ .hover-text2,
+.mercury-photo:hover ~ .hover-text3,
+.mercury-photo:hover ~ .hover-text4,
+.mercury-photo:hover ~ .hover-text5 {
   opacity: 1;
 }
