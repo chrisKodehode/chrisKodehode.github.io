@@ -39,11 +39,11 @@ body {
 }
 
 /*Make a sticky navbar | little buggy but it works for now*/
-header{
+/* header{
   position: sticky;
   top: 0;
   z-index: 1;
-}
+} */
 
 nav {
   width: 100%;
