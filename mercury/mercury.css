@@ -517,6 +517,8 @@ a {
 
   width: calc(16.5% * 5);
   animation: infinite mercury 15s linear;
+
+  margin-top: 100px;
 }
 
 .mercury-photo {
@@ -584,6 +586,7 @@ a {
   height: 150px;
   display: flex;
   flex-direction: column;
+  margin-top: 300px;
 }
 
 .bottom #contact {
