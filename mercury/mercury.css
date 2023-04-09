@@ -51,8 +51,8 @@ nav {
 .get--started,
 .explore,
 .facts,
-.nav-gallery,
-.nav-contact {
+.gallery,
+.contact {
   padding-right: 80px;
 
   /*make nav items look clickable*/
