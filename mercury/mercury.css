@@ -3,6 +3,10 @@
     1: Optimize code with shorthands, CSS Best practices, rules etc
 */
 
+.explore-textp{
+  white-space: pre;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -379,7 +383,7 @@ a {
 
 .explore-title {
   color: #fbb00e;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 20px 47px;
 }
 
 .explore-text {
