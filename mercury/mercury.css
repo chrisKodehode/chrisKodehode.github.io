@@ -63,6 +63,12 @@ nav {
   margin: 20px 0px;
 }
 
+/*Nav items styling*/
+a {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
 .get--started,
 .explore,
 .facts,
@@ -137,13 +143,11 @@ nav {
 .planet-orbit-duration {
   color: var(--color-white);;
   font-size: large;
-  margin: 0;
 }
 
 .planet-type {
   color: var(--color-white);;
   font-size: medium;
-  margin: 0;
 }
 
 #get-started {
@@ -166,8 +170,7 @@ nav {
 
 #watch-this {
   position: absolute;
-  margin-left: 380px;
-  margin-top: 230px;
+  margin: 230px 0 0 380px;
 }
 
 #character {
@@ -177,6 +180,7 @@ nav {
 }
 
 #video {
+  /*These margins doesn't make sense but they work for how we want it to look like*/
   margin: 100px;
   margin-left: 723px;
 }
@@ -213,20 +217,20 @@ nav {
   margin: 100px auto 0px auto;
 }
 
-a {
-  color: var(--color-orange);
-  text-decoration: none;
-}
-
 /* Sun system sun and Mercury*/
 .wrapper {
   position: relative;
   margin: 0 auto;
   display: block;
   margin-top: 0px;
+
+  /* Set the distance between the viewer and the Z axis */
   perspective: 1000px;
+  /* Set the origin perspective as 60% on the X axis and 50% on the Y axis */
   perspective-origin: 60% 50%;
+  /* Rotate the element counter clockwise by 10 degrees */
   transform: rotate(-10deg);
+  
 }
 
 .wrapper > div {
@@ -339,7 +343,7 @@ a {
 }
 
 /*Mercury zoom*/
-.wrapper1 {
+.mercury-wrapper {
   position: relative;
   margin: 0 auto;
   display: block;
@@ -349,7 +353,7 @@ a {
   transform: rotate(-10deg);
 }
 
-.wrapper1 > div {
+.mercury-wrapper > div {
   position: relative;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -384,11 +388,9 @@ a {
 @keyframes spinsun1 {
   0% {
     transform: rotateZ(0);
-    /*transform: rotate(0);*/
   }
   100% {
     transform: rotateZ(360deg);
-    /* transform: rotate(360deg);*/
   }
 }
 
@@ -405,7 +407,6 @@ a {
 
 #facts-title {
   color: var(--color-orange);
-  /* font-size: xx-large; */
   font-size: 48px;
   font-weight: bold;
   font-family: "Orbitron";
@@ -489,6 +490,8 @@ a {
   font-size: large;
 }
 
+
+/*Take priority over the old font size*/
 .fact-3-text{
   font-size: 14px;
 }
