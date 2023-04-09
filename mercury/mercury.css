@@ -259,6 +259,7 @@ a {
   animation: orbitmercury 12s infinite linear;
   top: -7.5px;
 }
+
 @keyframes orbitmercury {
   0% {
     z-index: 2;
@@ -303,6 +304,7 @@ a {
     transform: rotate(-360deg);
   }
 }
+
 @keyframes anti-spin {
   from {
     transform: rotateY(0);
@@ -311,6 +313,7 @@ a {
     transform: rotateY(-360deg);
   }
 }
+
 @keyframes anti-spin-rings {
   from {
     transform: rotateY(0) rotateX(73deg);
@@ -484,6 +487,7 @@ a {
 .fact-10 {
   margin-right: 20px;
 }
+
 .gallery-title {
   color: #fbb00e;
   padding: 250px 0px 50px 0px;
@@ -508,6 +512,7 @@ a {
   width: calc(16.5% * 5);
   animation: infinite mercury 15s linear;
 }
+
 .mercury-photo {
   margin-top: 10%;
   position: absolute;
@@ -519,6 +524,7 @@ a {
 
   transition: all 0.3s;
 }
+
 @keyframes mercury {
   0% {
     transform: perspective(0px) translateX(0);
@@ -565,6 +571,7 @@ a {
 .mercury-photo:hover ~ .hover-text5 {
   opacity: 1;
 }
+
 .bottom {
   background-color: black;
   width: 100%;
@@ -572,18 +579,21 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .bottom .Contact {
   color: #fbb00e;
   justify-content: center;
   text-align: center;
   font-size: 48px;
 }
+
 .bottom p {
   justify-content: flex-end;
   text-align: end;
   margin-right: 100px;
   color: #fbb00e;
 }
+
 .bottom .github {
   position: relative;
   font-size: 24px;
