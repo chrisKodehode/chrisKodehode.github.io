@@ -10,6 +10,13 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+/*CSS Variables for better perfomance and for many used values*/
+:root{
+  --color-orange: #fbb00e;
+  --color-black: black;
+  --color-white: white;
+}
+
 .explore-textp{
   white-space: pre;
 }
@@ -44,7 +51,7 @@ nav {
 }
 
 .nav-items {
-  color: #fbb00e;
+  color: var(--color-orange);
   list-style: none;
 
   font-size: x-large;
@@ -67,7 +74,7 @@ nav {
 }
 
 .intro-title {
-  color: #fbb00e;
+  color: var(--color-orange);
 }
 
 #intro-section {
@@ -78,7 +85,7 @@ nav {
 }
 
 .left-flex {
-  background-color: black;
+  background-color: var(--color-black);
   width: 50%;
   height: 600px;
 
@@ -86,7 +93,7 @@ nav {
 }
 
 .intro-text {
-  color: white;
+  color: var(--color-white);;
   font-size: larger;
 
   display: flex;
@@ -95,7 +102,7 @@ nav {
 }
 
 .right-flex {
-  background-color: black;
+  background-color: var(--color-black);
   width: 50%;
   height: 600px;
 
@@ -103,7 +110,7 @@ nav {
 }
 
 .planet-details {
-  background-color: black;
+  background-color: var(--color-black);;
   width: 100%;
   height: 100px;
   padding: 20px;
@@ -119,7 +126,7 @@ nav {
 }
 
 .planet-title {
-  color: #fbb00e;
+  color: var(--color-orange);
   text-transform: uppercase;
   font-size: medium;
   margin-bottom: 10px;
@@ -128,13 +135,13 @@ nav {
 .planet-distance,
 .planet-orbit-time,
 .planet-orbit-duration {
-  color: white;
+  color: var(--color-white);;
   font-size: large;
   margin: 0;
 }
 
 .planet-type {
-  color: white;
+  color: var(--color-white);;
   font-size: medium;
   margin: 0;
 }
@@ -148,7 +155,7 @@ nav {
 }
 
 #title {
-  color: #fbb00e;
+  color: var(--color-orange);
 
   font-size: 48px;
   font-weight: bold;
@@ -199,7 +206,7 @@ nav {
 }
 
 #explore-title {
-  color: #fbb00e;
+  color: var(--color-orange);
 
   font-size: 24px;
   font-weight: bold;
@@ -209,7 +216,7 @@ nav {
 }
 
 a {
-  color: #fbb00e;
+  color: var(--color-orange);
   text-decoration: none;
 }
 
@@ -388,18 +395,18 @@ a {
 }
 
 .explore-title {
-  color: #fbb00e;
+  color: var(--color-orange);
   padding: 0px 20px 20px 47px;
 }
 
 .explore-text {
-  color: white;
+  color: var(--color-white);;
   padding: 100px 0px 0px 0px;
   font-size: x-large;
 }
 
 #facts-title {
-  color: #fbb00e;
+  color: var(--color-orange);
   /* font-size: xx-large; */
   font-size: 48px;
   font-weight: bold;
@@ -432,11 +439,11 @@ a {
 .fact-8,
 .fact-9,
 .fact-10 {
-  background-color: black;
+  background-color: var(--color-black);;
   width: 250px;
   height: 400px;
-  color: white;
-  border: 6px solid #fbb00e;
+  color: var(--color-white);;
+  border: 6px solid var(--color-orange);
   border-radius: 10px;
 }
 
@@ -450,7 +457,7 @@ a {
 .fact-8-number,
 .fact-9-number,
 .fact-10-number {
-  color: #fbb00e;
+  color: var(--color-orange);
   text-align: center;
 }
 
@@ -467,7 +474,7 @@ a {
   text-align: center;
   font-size: large;
   font-weight: 800;
-  border: 2px solid #fbb00e;
+  border: 2px solid var(--color-orange);
 }
 
 .fact-1-text,
@@ -501,7 +508,7 @@ a {
 }
 
 #gallery-title {
-  color: #fbb00e;
+  color: var(--color-orange);
   font-size: 48px;
   font-weight: bold;
   text-align: center;
@@ -512,7 +519,7 @@ a {
 .gallery-text {
   margin: 0 auto;
   padding: 100px 20px 0px 20px;
-  color: white;
+  color: var(--color-white);;
   font-size: 20px;
 }
 
@@ -553,7 +560,7 @@ a {
 }
 
 .mercury-photo:hover {
-  outline: 3px solid white;
+  outline: 3px solid var(--color-white);;
   width: 300px;
   height: 250px;
 
@@ -569,12 +576,11 @@ a {
   bottom: 50px;
 
   background: solid rgba(0, 0, 0, alpha 0.4);
-  color: white;
+  color: var(--color-white);;
   width: 480px;
   height: 30px;
   transition: 0.5s ease;
   opacity: 0;
-  color: white;
   font-size: 16px;
 
   transition: opacity 0.5s;
@@ -591,7 +597,7 @@ a {
 }
 
 .bottom {
-  background-color: black;
+  background-color: var(--color-black);;
   width: 100%;
   height: 150px;
   display: flex;
@@ -600,7 +606,7 @@ a {
 }
 
 .bottom #contact {
-  color: #fbb00e;
+  color: var(--color-orange);
   justify-content: center;
   text-align: center;
   font-size: 48px;
@@ -610,7 +616,7 @@ a {
   justify-content: flex-end;
   text-align: end;
   margin-right: 100px;
-  color: #fbb00e;
+  color: var(--color-orange);
 }
 
 .bottom .github-button {
@@ -624,6 +630,6 @@ a {
 
   border-radius: 5px;
 
-  color: white;
+  color: var(--color-white);;
   background: transparent;
 }
