@@ -3,6 +3,13 @@
     1: Optimize code with shorthands, CSS Best practices, rules etc
 */
 
+/*Orbitron Font*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&display=swap');
+
+.font-orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
+
 .explore-textp{
   white-space: pre;
 }
@@ -85,8 +92,6 @@ nav {
   display: flex;
   align-items: start;
   padding: 10px 100px 0px 0px;
-
-  white-space: pre-line;
 }
 
 .right-flex {
@@ -398,6 +403,7 @@ a {
   /* font-size: xx-large; */
   font-size: 48px;
   font-weight: bold;
+  font-family: "Orbitron";
   text-align: center;
   margin: 300px auto 0px auto;
   padding-bottom: 50px;
@@ -476,6 +482,10 @@ a {
 .fact-10-text {
   padding: 20px;
   font-size: large;
+}
+
+.fact-3-text{
+  font-size: 14px;
 }
 
 .fact-2,
