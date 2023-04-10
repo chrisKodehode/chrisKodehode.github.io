@@ -4,10 +4,10 @@
 */
 
 /*Orbitron Font*/
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&display=swap');
 
 .font-orbitron {
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /*CSS Variables for better perfomance and for many used values*/
@@ -38,13 +38,6 @@ body {
   min-width: 85rem;
 }
 
-/*Make a sticky navbar | little buggy but it works for now*/
-/* header{
-  position: sticky;
-  top: 0;
-  z-index: 1;
-} */
-
 nav {
   width: 100%;
   height: 100px;
@@ -58,6 +51,12 @@ nav {
   height: 100px;
 }
 
+.mercury-logo{
+  width: 100px;
+  height: 80px;
+  margin: 10px 0 5px -400px;
+}
+
 .nav-items {
   color: var(--color-orange);
   list-style: none;
@@ -68,16 +67,7 @@ nav {
   align-items: center;
   margin: 20px 0;
 }
-.logo {
-  width: 55px;
-  height: 55px;
-  background: url(./Pictures/MercuryPlanet.png) no-repeat;
-  background-size: cover;
-  /* background-color: transparent;*/
-  border-radius: 250px;
-  margin: 0 auto;
-  animation: spinsun1 40s infinite linear;
-}
+
 /*Nav items styling*/
 a {
   color: var(--color-orange);
@@ -110,7 +100,7 @@ a {
 }
 
 .intro-text {
-  color: var(--color-white);
+  color: var(--color-white);;
   font-size: larger;
   display: flex;
   align-items: start;
@@ -125,7 +115,7 @@ a {
 }
 
 .planet-details {
-  background-color: var(--color-black);
+  background-color: var(--color-black);;
   width: 100%;
   height: 100px;
   padding: 20px;
@@ -149,12 +139,12 @@ a {
 .planet-distance,
 .planet-orbit-time,
 .planet-orbit-duration {
-  color: var(--color-white);
+  color: var(--color-white);;
   font-size: large;
 }
 
 .planet-type {
-  color: var(--color-white);
+  color: var(--color-white);;
   font-size: medium;
 }
 
@@ -402,7 +392,7 @@ a {
 }
 
 .explore-text {
-  color: var(--color-white);
+  color: var(--color-white);;
   padding: 100px 0px 0px 0px;
   font-size: x-large;
 }
@@ -440,10 +430,10 @@ a {
 .fact-8,
 .fact-9,
 .fact-10 {
-  background-color: var(--color-black);
+  background-color: var(--color-black);;
   width: 250px;
   height: 400px;
-  color: var(--color-white);
+  color: var(--color-white);;
   border: 6px solid var(--color-orange);
   border-radius: 10px;
 }
@@ -493,7 +483,7 @@ a {
 }
 
 /*Take priority over the old font size*/
-.fact-3-text {
+.fact-3-text{
   font-size: 14px;
 }
 
@@ -514,14 +504,14 @@ a {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  margin: 100px auto 0px auto;
+  margin: 300px auto 0px auto;
   padding-bottom: 50px;
 }
 
 .gallery-text {
   margin: 0 auto;
-  /* padding: 100px 20px 0px 20px;*/
-  color: var(--color-white);
+  padding: 100px 20px 0px 20px;
+  color: var(--color-white);;
   font-size: 20px;
 }
 
@@ -538,7 +528,7 @@ a {
 }
 
 .mercury-photo {
-  margin-top: 5%;
+  margin-top: 10%;
   position: absolute;
   width: 250px;
   height: 200px;
@@ -558,7 +548,7 @@ a {
 }
 
 .mercury-photo:hover {
-  outline: 3px solid var(--color-white);
+  outline: 3px solid var(--color-white);;
   width: 300px;
   height: 250px;
   transform: scale(1.05) translateY(-20px);
@@ -572,7 +562,7 @@ a {
   position: absolute;
   bottom: 50px;
   background: solid rgba(0, 0, 0, alpha 0.4);
-  color: var(--color-white);
+  color: var(--color-white);;
   width: 480px;
   height: 30px;
   transition: 0.5s ease;
@@ -591,12 +581,12 @@ a {
 }
 
 .bottom {
-  background-color: var(--color-black);
+  background-color: var(--color-black);;
   width: 100%;
   height: 150px;
   display: flex;
   flex-direction: column;
-  /*margin-top: 300px;*/
+  margin-top: 300px;
 }
 
 .bottom #contact {
@@ -616,11 +606,11 @@ a {
 .bottom .github-button {
   position: relative;
   font-size: 24px;
-  left: 72%;
+  left: 78%;
   align-items: flex-end;
   width: 170px;
   height: 50px;
   border-radius: 5px;
-  color: var(--color-white);
+  color: var(--color-white);;
   background: transparent;
 }
