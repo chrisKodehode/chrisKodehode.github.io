@@ -379,7 +379,7 @@ a {
 
 .explore-text {
   color: var(--color-white);;
-  padding: 100px 0p 0 0;
+  padding: 100px 0 0 0;
   font-size: x-large;
 }
 
@@ -547,7 +547,6 @@ a {
 .hover-text5 {
   position: absolute;
   bottom: 50px;
-  background: solid rgba(0, 0, 0, alpha 0.4);
   color: var(--color-white);;
   width: 480px;
   height: 30px;
